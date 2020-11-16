@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#paint {
+  background-color: #8822bb;
+  --bytemare-tile-size: 24;
+  --bytemare-gap: 2;
+  --bytemare-color: #8822bb;
+  --bytemare-probability: .321;
+  background-image: paint(bytemare);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}

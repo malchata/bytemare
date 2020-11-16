@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Paint Worklet Test
+    </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="paint"></div>
+    <script>
+      if (window.CSS.paintWorklet) {
+        CSS.paintWorklet.addModule("bytemare.js");
+      }
+    </script>
+  </body>
+</html>

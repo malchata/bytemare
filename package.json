@@ -1,0 +1,35 @@
+{
+  "name": "bytemare",
+  "version": "0.1.0",
+  "description": "Hordes of blocks come together to become your WORST BYTEMARE.",
+  "main": "bytemare.js",
+  "scripts": {
+    "copy": "cp -fv ./bytemare.js ./test/",
+    "server": "node ./http.js",
+    "test": "npm run copy && npm run server",
+    "lint": "npx eslint ./bytemare.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malchata/bytemare.git"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "paint",
+    "worklet",
+    "css",
+    "houdini"
+  ],
+  "author": "Jeremy L. Wagner <jeremy.l.wagner@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malchata/bytemare/issues"
+  },
+  "homepage": "https://github.com/malchata/bytemare#readme",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "express": "^4.17.1"
+  }
+}
